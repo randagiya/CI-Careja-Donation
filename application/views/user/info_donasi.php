@@ -34,7 +34,7 @@
                                             <?php echo $this->session->flashdata('message'); ?>
                                         </h6>
                                     </div>
-                                    <div class="card mx-auto" style="width: auto;">
+                                    <div class="card mx-auto mb-3" style="width: auto;">
                                         <div class="card-body">
                                             <p class="card-title fs-5 fst-italic">Upload bukti transfer</p>
                                             <form role="form" action="<?php echo base_url('User/kirim_bukti/' . $this->uri->segment(3)); ?>" method="POST" enctype="multipart/form-data">

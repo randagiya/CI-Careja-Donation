@@ -59,7 +59,8 @@
                                             <a type="button" class="btn btn-success" href="<?= base_url('Post/edit/') . $us['id']; ?> ">Edit</a>
                                             <a type="button" class="btn btn-danger" href="<?= base_url('Post/hapus/') . $us['id']; ?> ">Hapus</a>
                                         </div>
-                                        <p class="text-sm-end">Dipost tanggal: <?= $us['tanggal_upload'] ?></p>
+                                        <p class="text-sm-start">Dipost tanggal: <?= $us['tanggal_upload'] ?></p>
+                                        <p class="text-sm-start">Batas tanggal donasi: <?= $us['tanggal_batas'] ? $us['tanggal_batas'] : '-' ?></p>
                                     </div>
                                 </div>
                             </div>

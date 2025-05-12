@@ -12,10 +12,7 @@
                                 <input type="text" class="form-control" placeholder="Nama" value="<?= set_value('nama'); ?>" name="nama" id="nama">
                                 <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
                             </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Keterangan" value="<?= set_value('keterangan'); ?>" name="keterangan" id="keterangan">
-                                <?= form_error('keterangan', '<small class="text-danger pl-3">', '</small>'); ?>
-                            </div>
+                            <textarea class="form-control mb-3" placeholder="Keterangan" name="keterangan" id="keterangan" rows="4" style="resize: vertical;"></textarea>
                             <div class="mb-3">
                                 <input type="text" class="form-control" placeholder="yyyy-mm-dd (20xx-0x-0x)" value="<?= set_value('tanggal_batas'); ?>" name="tanggal_batas" id="tanggal_batas">
                                 <small>kosongkan jika tidak ada tanggal batas</small>

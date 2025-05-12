@@ -64,6 +64,7 @@ class Post extends CI_Controller
 			$data = [
 				'nama' => $this->input->post('nama'),
 				'tanggal_batas' => $this->input->post('tanggal_batas'),
+				'tanggal_batas' => $this->input->post('tanggal_batas') ? $this->input->post('tanggal_batas') : null,
 				'keterangan' => $this->input->post('keterangan'),
 			];
 			$upload_image = $_FILES['gambar']['name'];
@@ -109,7 +110,7 @@ class Post extends CI_Controller
 		} else {
 			$data = [
 				'nama' => $this->input->post('nama'),
-				'tanggal_batas' => $this->input->post('tanggal_batas'),
+				'tanggal_batas' => $this->input->post('tanggal_batas') ? $this->input->post('tanggal_batas') : null,
 				'keterangan' => $this->input->post('keterangan'),
 			];
 			$upload_image = $_FILES['gambar']['name'];
